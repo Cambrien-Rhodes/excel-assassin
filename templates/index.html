@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        h1{
+            font-weight: bold;
+            color: cyan;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        body{
+            font-family:'Times New Roman', Times, serif;
+        }
+    </style>
+    <title>Excel Assassin - Home</title>
+
+</head>
+<body>
+<h1>Welcome to the Excel Assassin</h1>
+<form action="/assassinate" method="POST" enctype="multipart/form-data">
+    <label>1.  Upload Inventory CSV</label>
+    <input type="file" name="uploaded_file" accept="'.csv" required>
+
+    <label>2.  Set Restock Threshold:</label>
+    <input type="number" name="threshold" value="5" min="-1000" max="1000">
+
+    <button type="submit">ASSASSINATE</button>
+</form>
+</body>
+</html>
